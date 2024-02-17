@@ -1,13 +1,13 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CommandMenu } from "@/components/command-menu";
 import { Metadata } from "next";
 import { Section } from "@/components/ui/section";
-import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
+import { MailIcon, PhoneIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
@@ -16,15 +16,15 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
+    <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 font-normal print:p-12 md:p-16">
       <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-1.5">
             <h1 className="text-2xl font-bold">{RESUME_DATA.name}</h1>
-            <p className="max-w-md text-pretty font-mono text-sm text-muted-foreground">
+            {/* <p className="max-w-md text-pretty font-mono text-sm text-muted-foreground">
               {RESUME_DATA.about}
-            </p>
-            <p className="max-w-md items-center text-pretty font-mono text-xs text-muted-foreground">
+            </p> */}
+            {/* <p className="max-w-md items-center text-pretty font-mono text-xs text-muted-foreground">
               <a
                 className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
                 href={RESUME_DATA.locationLink}
@@ -33,8 +33,28 @@ export default function Page() {
                 <GlobeIcon className="size-3" />
                 {RESUME_DATA.location}
               </a>
-            </p>
-            <div className="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden">
+            </p> */}
+            <div className="flex gap-x-2 text-sm text-muted-foreground">
+              {RESUME_DATA.contact.email && (
+                <a href={`mailto:${RESUME_DATA.contact.email}`}>
+                  <p>{RESUME_DATA.contact.email}</p>
+                </a>
+              )}
+
+              {RESUME_DATA.contact.email && (
+                <a href={`mailto:${RESUME_DATA.contact.tel}`}>
+                  <p>{RESUME_DATA.contact.tel}</p>
+                </a>
+              )}
+
+              {RESUME_DATA.contact.social.map((social) => (
+                <a key={social.name} href={social.url}>
+                  <p>{social.name}</p>
+                </a>
+              ))}
+            </div>
+
+            <div className="flex flex-row gap-x-1 pt-1 text-sm text-muted-foreground print:hidden">
               {RESUME_DATA.contact.email ? (
                 <Button
                   className="size-8"
@@ -73,7 +93,7 @@ export default function Page() {
                 </Button>
               ))}
             </div>
-            <div className="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex">
+            {/* <div className="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex">
               {RESUME_DATA.contact.email ? (
                 <a href={`mailto:${RESUME_DATA.contact.email}`}>
                   <span className="underline">{RESUME_DATA.contact.email}</span>
@@ -84,20 +104,21 @@ export default function Page() {
                   <span className="underline">{RESUME_DATA.contact.tel}</span>
                 </a>
               ) : null}
-            </div>
+            </div> */}
           </div>
 
-          <Avatar className="size-28">
+          {/* <Avatar className="size-28">
             <AvatarImage alt={RESUME_DATA.name} src={RESUME_DATA.avatarUrl} />
+            <Image src={RESUME_DATA.avatarUrl} alt="My Picture" />
             <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback>
-          </Avatar>
+          </Avatar> */}
         </div>
-        <Section>
+        {/* <Section>
           <h2 className="text-xl font-bold">About</h2>
           <p className="text-pretty font-mono text-sm text-muted-foreground">
             {RESUME_DATA.summary}
           </p>
-        </Section>
+        </Section> */}
         <Section>
           <h2 className="text-xl font-bold">Work Experience</h2>
           {RESUME_DATA.work.map((work) => {
@@ -107,10 +128,10 @@ export default function Page() {
                   <div className="flex items-center justify-between gap-x-2 text-base">
                     <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
                       <a className="hover:underline" href={work.link}>
-                        {work.company}
+                        {`${work.title} @ ${work.company}`}
                       </a>
 
-                      <span className="inline-flex gap-x-1">
+                      {/* <span className="inline-flex gap-x-1">
                         {work.badges.map((badge) => (
                           <Badge
                             variant="secondary"
@@ -120,18 +141,18 @@ export default function Page() {
                             {badge}
                           </Badge>
                         ))}
-                      </span>
+                      </span> */}
                     </h3>
                     <div className="text-sm tabular-nums text-gray-500">
                       {work.start} - {work.end}
                     </div>
                   </div>
 
-                  <h4 className="font-mono text-sm leading-none">
+                  {/* <h4 className="font-mono text-sm leading-none">
                     {work.title}
-                  </h4>
+                  </h4> */}
                 </CardHeader>
-                <CardContent className="mt-2 text-xs">
+                <CardContent className="whitespace-pre-line">
                   {work.description}
                 </CardContent>
               </Card>
