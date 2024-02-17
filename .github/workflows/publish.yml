@@ -21,9 +21,6 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
 
-      # - name: Setup Node.js ⚙️ - Cache dependencies ⚡ - Install dependencies 🔧
-      #   uses: ./.github/workflows/setup-node
-
       - name: Setup Node.js ⚙️
         uses: actions/setup-node@v4
         with:
@@ -39,7 +36,7 @@ jobs:
       - name: Install dependencies 🔧
         shell: bash
         if: steps.cache_dependencies.outputs.cache-hit != 'true'
-        run: npm ci
+        run: npm i
 
       - name: Setup Pages ⚙️
         uses: actions/configure-pages@v4
