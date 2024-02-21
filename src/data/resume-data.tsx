@@ -157,14 +157,13 @@ export const RESUME_DATA = {
     {
       title: "Zet Mobile App",
       techStack: [
-        "Side Project",
+        "React Native",
         "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
+        "JavaScript",
+        "React Query",
+        "Zustand"
       ],
-      description: "A platform to build and grow your online business",
+      // description: "A platform to build and grow your online business",
       link: {
         label: "ZET Android App",
         href: "https://play.google.com/store/apps/details?id=in.onecode.app",
