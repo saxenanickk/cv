@@ -160,8 +160,10 @@ export const RESUME_DATA = {
         "React Native",
         "TypeScript",
         "JavaScript",
+        "Expo",
         "React Query",
-        "Zustand"
+        "Zustand",
+        "Nativewind"
       ],
       description: "",
       link: {
@@ -171,11 +173,11 @@ export const RESUME_DATA = {
     },
     {
       title: "Zet Website",
-      techStack: ["Side Project", "TypeScript", "Next.js", "Browser Extension"],
+      techStack: ["Next.js", "TypeScript", "Blogs", "Tailwind"],
       description:
         "Browser extension that records everything happening in a web application",
       link: {
-        label: "monito.dev",
+        label: "Zet Website",
         href: "https://zetapp.in/",
       },
     },
@@ -187,68 +189,92 @@ export const RESUME_DATA = {
     },
     {
       title: "Zet Blogs CMS",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
+      techStack: ["Side Project", "Strapi", "NodeJS", "AWS", "EC2"],
       description:
         "Generates beautiful wallpapers using random shapes and gradients",
       link: {
-        label: "barepapers.com",
+        label: "Zet Blogs CMS",
         href: "https://zetapp.in/blog",
       },
     },
     {
       title: "My Teams Android App",
-      techStack: ["Side Project", "Next.js", "MDX"],
+      techStack: [
+        "React Native",
+        "TypeScript",
+        "JavaScript",
+        "Expo",
+        "React Query",
+        "Zustand",
+        "Nativewind"
+      ],
       description:
         "My personal website and blog. Built with Next.js and Notion API",
       link: {
-        label: "github.com",
+        label: "My Teams Android App",
         href: "https://play.google.com/store/apps/details?id=in.myteams.app",
       },
     },
     {
       title: "My Teams Web App",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
+      techStack: [
+        "React Native Web",
+        "TypeScript",
+        "JavaScript",
+        "Expo",
+        "React Query",
+        "Zustand",
+        "Tailwind"
+      ],
       description:
         "Minimalist calendars, habit trackers and planners generator",
       link: {
-        label: "useminimal.com",
+        label: "My Teams Web App",
         href: "https://myteams.co.in",
       },
     },
     {
       title: "Magnet App",
-      techStack: ["Side Project", "TypeScript", "Next.js"],
+      techStack: [
+        "React Native",
+        "TypeScript",
+        "JavaScript",
+        "Expo",
+        "React Query",
+        "Zustand",
+        "Nativewind"
+      ],
       description: "Tracks current year progress and displays a countdown",
       link: {
-        label: "getyearprogress.com",
+        label: "Magnet App",
         href: "https://play.google.com/store/apps/details?id=in.magnetapp",
       },
     },
     {
       title: "Magnet Website",
-      techStack: ["TypeScript", "React", "Node.js", "GraphQL"],
+      techStack: ["Next.js", "TypeScript", "Blogs", "Tailwind"],
       description:
         "The Agile meeting co-pilot that delivers better meetings with less effort",
       link: {
-        label: "github.com",
+        label: "Magnet Webstie",
         href: "https://www.magnetapp.in/",
       },
     },
+    // {
+    //   title: "Products Microservice",
+    //   techStack: ["TypeScript", "React", "Node.js", "GraphQL"],
+    //   description:
+    //     "Creative collaboration platform that combines video conferencing and HD media streaming",
+    // },
     {
-      title: "Products Microservice",
-      techStack: ["TypeScript", "React", "Node.js", "GraphQL"],
-      description:
-        "Creative collaboration platform that combines video conferencing and HD media streaming",
-    },
-    {
-      title: "Zet Unified Dashboard",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
+      title: "Zet Admin Dashboard",
+      techStack: ["Next.js", "TypeScript", "Tailwind", "Shadcn"],
       description:
         "Android application for leading virtual mobile operator in Poland",
     },
     {
       title: "MPL Android App",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
+      techStack: ["React Native", "Redux", "Jest", "React Testing Library"],
       description:
         "Howdy is a place for you to join communities you care about",
       link: {
@@ -258,7 +284,7 @@ export const RESUME_DATA = {
     },
     {
       title: "MPL iOS App",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
+      techStack: ["React Native", "Redux", "Jest", "React Testing Library"],
       description:
         "Android application for managing and displaying restaurant menus in kiosk mode",
       link: {
@@ -268,7 +294,7 @@ export const RESUME_DATA = {
     },
     {
       title: "Jio Payments Bank Web",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
+      techStack: ["React Native Web", "Mobx State Tree", "Jest", "React Testing Library", "Styled System"],
       description:
         "Android application that helps with sharing your contact details",
       link: {
@@ -278,7 +304,7 @@ export const RESUME_DATA = {
     },
     {
       title: "JioBusiness iOS",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
+      techStack: ["React Native", "Mobx State Tree", "Jest", "React Testing Library", "Styled System"],
       description:
         "Android application that helps with sharing your contact details",
       link: {
@@ -288,7 +314,7 @@ export const RESUME_DATA = {
     },
     {
       title: "JioBusiness Android",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
+      techStack: ["React Native", "Mobx State Tree", "Jest", "React Testing Library", "Styled System"],
       description:
         "Android application that helps with sharing your contact details",
       link: {
@@ -298,13 +324,13 @@ export const RESUME_DATA = {
     },
     {
       title: "MEX Android App",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
+      techStack: ["React Native", "Redux", "Jest", "Android", "Java"],
       description:
         "Android application that helps with booking a table in a restaurants",
     },
     {
       title: "MEX iOS App",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
+      techStack: ["React Native", "Redux", "Jest", "iOS", "Swift"],
       description:
         "Android application that helps with booking a table in a restaurants",
     },
