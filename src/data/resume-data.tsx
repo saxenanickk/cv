@@ -163,7 +163,7 @@ export const RESUME_DATA = {
         "React Query",
         "Zustand"
       ],
-      // description: "A platform to build and grow your online business",
+      description: "",
       link: {
         label: "ZET Android App",
         href: "https://play.google.com/store/apps/details?id=in.onecode.app",
