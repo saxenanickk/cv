@@ -24,7 +24,7 @@ jobs:
     # install dependencies using clean install to avoid package lock updates
     - run: npm install
     # finally run the tests
-    - run: npm run test-coverage
+    - run: npm run test
 
     # Save coverage report in Coveralls
     - name: Coveralls
