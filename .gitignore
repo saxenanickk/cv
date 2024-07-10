@@ -37,3 +37,10 @@ next-env.d.ts
 
 # ide
 .idea
+
+# cache
+.yarn/cache
+.yarn/unplugged
+
+# output
+.nyc_output
